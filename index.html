@@ -10,7 +10,7 @@
         L.mapquest.key = key;
         let address = prompt("What address do you wish to begin your empire from?");
         var map;
-        L.mapquest.geocoding().geocode([address], function (err, response) { map = L.mapquest.map("map", { center: [response["latLong"]["lat"], response["latLong"]["long"]], layers: L.mapquest.tileLayer, zoom: 12 }); map.addLayer(L.mapquest.geocodingLayer({ geocodingResponse: response }); };
+        L.mapquest.geocoding().geocode([address], function (err, response) { map = L.mapquest.map("map", { center: [response["latLong"]["lat"], response["latLong"]["long"]], layers: L.mapquest.tileLayer, zoom: 12 }); map.addLayer(L.mapquest.geocodingLayer({ geocodingResponse: response }); });
       }
     </script>
   </head>
