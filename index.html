@@ -12,7 +12,7 @@
         var map;
         L.mapquest.geocoding().geocode([address], function (err, response) { 
           map = L.mapquest.map("map", { center: [response["latLong"]["lat"], response["latLong"]["long"]], layers: L.mapquest.tileLayer, zoom: 12 });
-          map.addLayer(L.mapquest.geocodingLayer({ geocodingResponse: response }))); 
+          map.addLayer(L.mapquest.geocodingLayer({ geocodingResponse: response })); 
         });
       }
     </script>
